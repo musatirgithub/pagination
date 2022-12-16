@@ -3,6 +3,7 @@ import useFetch from "../utils/useFetch";
 
 const Repos = () => {
   const { loading, error, repos } = useFetch();
+  console.log(loading, error, repos);
   return <div>Repos</div>;
 };
 
