@@ -7,13 +7,20 @@ const Repos = () => {
   const [page, setPage] = useState(0);
   const [newRepos, setNewRepos] = useState([]);
   useEffect(() => {
-    setNewRepos(paginate(repos));
-  }, [loading]);
+    if (loading) return;
+    setNewRepos(repos[page]);
+  }, [loading, page]);
 
   console.log(newRepos);
   if (loading) return <div>...Loading</div>;
   if (error) return <div>Something went wrong</div>;
-  return <div>Repos</div>;
+  return (
+    <div>
+      {newRepos.map((item, index) => {
+        return <div key={index}>{item.login}</div>;
+      })}
+    </div>
+  );
 };
 
 export default Repos;
