@@ -45,12 +45,16 @@ const Repos = () => {
         </button>
         {repos.map((item, index) => {
           return (
-            <div key={index} className="page-number">
+            <div
+              key={index}
+              className="page-number"
+              onClick={() => setPage(index)}
+            >
               {index + 1}
             </div>
           );
         })}
-        <button type="button" onClick={handleNext}>
+        <button type="button" onClick={handleNext} className="btn">
           Next
         </button>
       </div>
