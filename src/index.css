@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.page-container{
+  display: flex;
+  gap: 0.5rem;
+}
+.page-number{
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  background-color: rgb(196, 196, 229);
+  border-radius: 3px;
+}
