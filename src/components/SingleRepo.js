@@ -2,7 +2,16 @@ import React from "react";
 
 const SingleRepo = ({ item }) => {
   console.log(item);
-  return <div>{item.login}</div>;
+  const { login, avatar_url, html_url } = item;
+  return (
+    <div className="card-container">
+      <div className="image-container">
+        <img src={avatar_url} alt={login} />
+      </div>
+      <h5>{login}</h5>
+      <button type="button">{html_url}</button>
+    </div>
+  );
 };
 
 export default SingleRepo;
