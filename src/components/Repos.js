@@ -31,14 +31,17 @@ const Repos = () => {
   if (loading) return <div>...Loading</div>;
   if (error) return <div>Something went wrong</div>;
   return (
-    <div>
-      {newRepos.map((item, index) => {
-        return (
-          <div key={index}>
-            <SingleRepo item={item} />
-          </div>
-        );
-      })}
+    <div className="page-container">
+      <h2>Pagination</h2>
+      <div className="repos-container">
+        {newRepos.map((item, index) => {
+          return (
+            <div key={index}>
+              <SingleRepo item={item} />
+            </div>
+          );
+        })}
+      </div>
       <div className="pagenumber-container">
         <button type="button" onClick={handlePrev}>
           Previous
