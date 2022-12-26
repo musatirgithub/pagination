@@ -39,7 +39,7 @@ const Repos = () => {
           </div>
         );
       })}
-      <div className="page-container">
+      <div className="pagenumber-container">
         <button type="button" onClick={handlePrev}>
           Previous
         </button>
