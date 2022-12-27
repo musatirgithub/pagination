@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# [Project : pagination]()
+## Table of contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  - [The challenge](#the-challenge)
+  - [Problem Statement](#problem-statement)
+  - [Screenshot](#screenshot)
+  - [Project Information](#project-information)
+  - [Lesson Learned](#lesson-learned)
+  - [Useful resources](#useful-resources)
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## The challenge
+Project focuses on showing github followers in a paginated structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Problem Statement
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Develop an app receiving github followers from github API, write a function to divide followers into pages, represent followers to users in a structure which allows users to navigate between pages
+<hr>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshot
+<p align="center">
+<a href="https://portfolio-project-musatir.vercel.app/"><img src="portfolio-project.gif" alt="gif"></a>
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Project Information
+- Pagination app is made by using Raect,
+- For showing designated number of followers at each page I've used Javascript Array.from method,
+- I've created a useFetch custom hook and got loading, error, repos from useFetch custom hook,
+- User can navigate between pages by either clicking page numbers or next, previous buttons.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+------
+I used;
+- React
+- Async functions
+- Custom, useState, useEffect hooks.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Lesson Learned
 
-### Making a Progressive Web App
+- Javascript Array.from method is quite useful for turning an array into array of arrays. After exporting my array of arrays to Repos component I needed a two dependencies at my useEffect hook in order to rerender the page. By using loading ( comes from useFetch custom hook) and page states I've managed to rerender the page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Useful resources
 
-### Advanced Configuration
+- [W3 Schools](https://www.w3schools.com/) 
+- [MDN](https://developer.mozilla.org/en-US/) 
+- [GOOGLE FONTS](https://fonts.google.com/) 
+- [REACT](https://reactjs.org/) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+<center> &#8987; Happy Coding  &#9997; </center>
