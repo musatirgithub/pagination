@@ -10,7 +10,9 @@ const SingleRepo = ({ item }) => {
       </div>
       <h5>{login}</h5>
       <a href={html_url}>
-        <button type="button">View Github</button>
+        <button type="button" className="btn">
+          View Github
+        </button>
       </a>
     </div>
   );
