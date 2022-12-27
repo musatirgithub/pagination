@@ -9,7 +9,9 @@ const SingleRepo = ({ item }) => {
         <img src={avatar_url} alt={login} />
       </div>
       <h5>{login}</h5>
-      <button type="button">{html_url}</button>
+      <a href={html_url}>
+        <button type="button">View Github</button>
+      </a>
     </div>
   );
 };
