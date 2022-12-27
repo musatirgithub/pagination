@@ -43,6 +43,7 @@ code {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 2rem;
+  align-items: center;
 }
 .page-number{
   width: 1.5rem;
@@ -54,12 +55,17 @@ code {
   cursor: pointer;
 }
 
+.active{
+  background-color: rgb(155, 50, 50);
+}
+
 .btn{
   cursor: pointer;
   border: none;
   background-color: rgb(155, 50, 50);
   border-radius: 3px;
   color: white;
+  padding: 0.6rem;
 }
 
 .card-container{

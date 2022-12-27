@@ -50,7 +50,7 @@ const Repos = () => {
           return (
             <div
               key={index}
-              className="page-number"
+              className={index === page ? "page-number active" : "page-number"}
               onClick={() => setPage(index)}
             >
               {index + 1}
