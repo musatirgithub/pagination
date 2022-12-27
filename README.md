@@ -23,7 +23,7 @@ Project focuses on showing github followers in a paginated structure
 
 ## Screenshot
 <p align="center">
-<a href="https://portfolio-project-musatir.vercel.app/"><img src="portfolio-project.gif" alt="gif"></a>
+<a href="https://pagination-three.vercel.app/"><img src="pagination.gif" alt="gif"></a>
 </p>
 
 
