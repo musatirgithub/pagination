@@ -23,7 +23,7 @@ code {
 }
 
 .page-container h2{
-  color: brown;
+  color: rgb(155, 50, 50);
   text-align: center;
   border-bottom: 2px solid #000;
   width: max-content;
@@ -48,13 +48,18 @@ code {
   width: 1.5rem;
   height: 1.5rem;
   text-align: center;
-  background-color: rgb(196, 196, 229);
+  color: white;
+  background-color: rgb(255, 100, 100);
   border-radius: 3px;
   cursor: pointer;
 }
 
 .btn{
   cursor: pointer;
+  border: none;
+  background-color: rgb(155, 50, 50);
+  border-radius: 3px;
+  color: white;
 }
 
 .card-container{
@@ -64,6 +69,9 @@ code {
  flex-direction: column;
  justify-content: center;
  align-items: center;
+ background-color: rgb(249, 225, 225);
+ border-radius: 8px;
+ box-shadow: 5px 10px 10px rgb(155, 50, 50);
 }
 
 .image-container{
