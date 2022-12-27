@@ -12,6 +12,16 @@ code {
     monospace;
 }
 
+.loading{
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(155, 50, 50);
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
 .page-container{
   max-width: 72rem;
   margin: 3rem auto 0;
@@ -90,4 +100,10 @@ code {
   width: 100%;
   object-fit: cover;
   border-radius: 8rem;
+}
+
+@media (min-width:992px){
+  .page-container {
+      gap: 5rem;
+    }
 }

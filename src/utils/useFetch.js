@@ -13,11 +13,9 @@ const useFetch = () => {
       const response = await fetch(url);
       const data = await response.json();
       setRepos(paginate(data));
-      console.log(repos);
       setError(false);
       setLoading(false);
     } catch (error) {
-      console.log(error);
       setError(true);
       setLoading(false);
     }
@@ -26,6 +24,7 @@ const useFetch = () => {
   useEffect(() => {
     fetchData();
   }, []);
+
   return { loading, error, repos };
 };
 
