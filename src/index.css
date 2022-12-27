@@ -36,12 +36,13 @@ code {
   flex-wrap: wrap;
   row-gap: 2rem;
   column-gap: 2.5rem;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 .pagenumber-container{
   display: flex;
   gap: 0.5rem;
+  margin-bottom: 2rem;
 }
 .page-number{
   width: 1.5rem;
