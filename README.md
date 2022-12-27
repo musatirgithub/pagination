@@ -31,7 +31,7 @@ Project focuses on showing github followers in a paginated structure
 
 
 ### Project Information
-- Pagination app is made by using Raect,
+- Pagination app is made by using React,
 - For showing designated number of followers at each page I've used Javascript Array.from method,
 - I've created a useFetch custom hook and got loading, error, repos from useFetch custom hook,
 - User can navigate between pages by either clicking page numbers or next, previous buttons.
