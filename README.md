@@ -58,7 +58,7 @@ I used;
 - [W3 Schools](https://www.w3schools.com/) 
 - [MDN](https://developer.mozilla.org/en-US/) 
 - [GOOGLE FONTS](https://fonts.google.com/) 
-- [BOOTSTRAP5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) 
+- [REACT](https://reactjs.org/) 
 
 
 
