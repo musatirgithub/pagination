@@ -43,7 +43,7 @@ const Repos = () => {
         })}
       </div>
       <div className="pagenumber-container">
-        <button type="button" onClick={handlePrev}>
+        <button type="button" onClick={handlePrev} className="btn">
           Previous
         </button>
         {repos.map((item, index) => {
